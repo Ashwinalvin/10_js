@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <div id="choose">
+
+ </div>
+    <script>
+        const one = document.getElementById('choose');
+        one.classList.add('hello');
+        //check the console in html file there you can see new class
+        //<div id="choose" class="hello"></div>
+
+
+
+            const hell = document.createElement('div');
+            hell.innerText = 'ashwin is here';
+            one.appendChild(hell);
+            hell.classList.add('bingo');
+            //for newly created div we have given class = 'bingo'
+             //in console <div class="bingo">ashwin is here</div> created
+             //div and given class as bingo
+
+        //we can use this class to give properties in css hight,width etc
+
+
+    </script>
+</body>
+</html>

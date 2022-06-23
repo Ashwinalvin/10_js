@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="myList">
+        <li>Apple</li>
+        <li>grapes</li>
+        
+    </ul>
+    <div id="spannar">
+        <span>one</span>
+        <span>two</span>
+    </div>
+    <script>
+        //Parent Element
+        const myList = document.getElementById('myList');
+        //Child Element to append list
+        let newlist = document.createElement('li');
+        //let newlist = document.createElement('div'); it creates new division
+        //let newlist = document.createElement('span'); it creates new span
+        //let newlist = document.createElement('li'); it creates new list
+        newlist.textContent = 'Banana';
+        //this is appended as list
+        //like <li>Banana</li>
+        myList.appendChild(newlist);
+
+
+
+        const number = document.getElementById('spannar');
+        const foradd = document.createElement('span');
+        foradd.innerText= 'three';
+        number.appendChild(foradd);
+
+
+
+    </script>
+</body>
+</html>
